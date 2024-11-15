@@ -1,0 +1,7 @@
+
+def write():
+    while True:
+        message = '{}:{}'.format("nickname",input(''))
+        client.send(message.encode("utf-8"))
+write_thread = Thread(target=recieve)
+write_thread.start()
